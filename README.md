@@ -1,4 +1,4 @@
-# What is Password Manager
+# What is KeySafe
 
 A simple **CLI password manager** built with **Python and SQLite**.
 

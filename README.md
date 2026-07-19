@@ -36,7 +36,7 @@ Users can also choose the desired password length.
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/Lim1n4l/KeySafe.git
 ```
 
 ### 3. Run the application

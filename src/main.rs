@@ -57,18 +57,18 @@ use crate::
 
 fn main()
 {
-   let (key , _) = match is_first_run()
-  {
-   Ok((Some(key) , Some(salt))) =>
+ let (key , _) = match is_first_run()
+ {
+  Ok((Some(key) , Some(salt))) =>
    {
     (key , salt)
    }
-   Ok((None , None)) | Ok(_) =>
+  Ok((None , None)) | Ok(_) =>
    {
     println!("[!] Invalid login password") ; 
     return ;
    }
-   Err(e) => match e
+  Err(e) => match e
    {
     CreateDataDbError | CreateTableError | InsertError | 
     SelectError | DeleteFromDatabaseError | ShowDatabaseError => 
